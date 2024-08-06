@@ -70,7 +70,7 @@ for i in range(iterations):
         plt.yticks([])
 
         plt.savefig('training_progresion.png')
-        plt.show()
+        plt.show()        
         plt.close()  
 
 x = denormalize(x, x_mean, x_std)
