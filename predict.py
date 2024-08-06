@@ -21,14 +21,14 @@ while True:
         if mileage < 0:
             print('\033[91m' + 'ALERT: Please enter a positive number' + '\033[0m')
         else:
-            break
+            price = estimate_price(mileage, theta0, theta1)
+            if price < 0:
+                print('\033[91m' + 'ALERT: The estimated price is negative, please try again' + '\033[0m')
+            else:
+                print('The estimated price of the car is: {:.2f}'.format(price))
+                break
     except ValueError:
         print('\033[91m' + 'ALERT: Please enter a valid number' + '\033[0m')
 
-price = estimate_price(mileage, theta0, theta1)
-if price < 0:
-    print('\033[91m' + 'ALERT: The estimated price is negative, please try again' + '\033[0m')
-else:
-    print('The estimated price of the car is: {:.2f}'.format(price))
 
 
