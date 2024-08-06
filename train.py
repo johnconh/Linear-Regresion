@@ -69,9 +69,8 @@ for i in range(iterations):
         plt.xticks([])
         plt.yticks([])
 
-        plt.savefig('training_progresion.png')
-        plt.show()        
-        plt.close()  
+        plt.savefig('training_progresion.png')      
+        plt.close()
 
 x = denormalize(x, x_mean, x_std)
 y = denormalize(y, y_mean, y_std)
