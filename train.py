@@ -100,5 +100,6 @@ plt.legend()
 plt.savefig('progresion.png')
 plt.close()
 
-print('Mean Squared Error:', mse)
-print('\033[92m' + 'Model trained and saved.' + '\033[0m')
+
+print('\nMean Squared Error:', mse)
+print('\033[92m' + 'Model trained and saved.' + '\033[0m\n')
