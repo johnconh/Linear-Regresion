@@ -66,13 +66,13 @@ for i in range(iterations):
         plt.legend()
 
         plt.savefig('training_progresion.png')
+        plt.show()
         plt.close()  
 
 x = denormalize(x, x_mean, x_std)
 y = denormalize(y, y_mean, y_std)
 theta0 = theta0 * y_std + y_mean - theta1 * x_mean * y_std / x_std
 theta1 = theta1 * y_std / x_std
-print(theta0, theta1)
 
 with open('train_values.pkl', 'wb') as f:
     pickle.dump((theta0, theta1), f)
