@@ -97,6 +97,8 @@ plt.ylabel('MSE')
 plt.title('Mean Squared Error Progression')
 plt.legend()
 
+plt.figtext(0.5, 0.97, 'Learning rate: {}\nNumber of cars: {}'.format(learning_rate, m), ha='center', va='top')
+
 plt.savefig('progresion.png')
 plt.close()
 
