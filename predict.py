@@ -29,6 +29,3 @@ while True:
                 break
     except ValueError:
         print('\033[91m' + 'ALERT: Please enter a valid number' + '\033[0m')
-
-
-
