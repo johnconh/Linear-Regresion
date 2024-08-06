@@ -57,6 +57,8 @@ for i in range(iterations):
         plt.ylabel('Price ($)')
         plt.title('Mileage vs Price - Iteration {}'.format(i))
         plt.legend()
+        plt.xticks([])
+        plt.yticks([])
 
         plt.subplot(1, 2, 2)
         plt.plot(range(i+1), mse_history[:i+1], label='MSE')
@@ -64,6 +66,8 @@ for i in range(iterations):
         plt.ylabel('MSE')
         plt.title('Mean Squared Error Progression')
         plt.legend()
+        plt.xticks([])
+        plt.yticks([])
 
         plt.savefig('training_progresion.png')
         plt.show()
@@ -97,4 +101,4 @@ plt.savefig('progresion.png')
 plt.close()
 
 print('Mean Squared Error:', mse)
-print('Model trained and saved.')
+print('\033[92m' + 'Model trained and saved.' + '\033[0m')
