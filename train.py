@@ -76,6 +76,7 @@ x = denormalize(x, x_mean, x_std)
 y = denormalize(y, y_mean, y_std)
 theta0 = theta0 * y_std + y_mean - theta1 * x_mean * y_std / x_std
 theta1 = theta1 * y_std / x_std
+mean_abs_error = np.mean(np.abs(y -(theta0 + (theta1*x))))
 
 with open('train_values.pkl', 'wb') as f:
     pickle.dump((theta0, theta1), f)
@@ -103,4 +104,5 @@ plt.close()
 
 
 print('\nMean Squared Error:', mse)
+print('\nMean Abs error:', mean_abs_error)
 print('\033[92m' + 'Model trained and saved.' + '\033[0m\n')
