@@ -10,3 +10,5 @@ El objetivo es mostrar cómo se puede entrenar un modelo de regresión lineal de
 - ***Visualización:*** El proyecto genera dos gráficos clave:
     - Gráfico de Dispersión con la Línea de Regresión: Muestra los puntos de datos (precio vs. kilometraje) junto con la línea de regresión lineal.
     - Progresión del Descenso de Gradiente: Muestra la evolución de los parámetros theta0 y theta1 a lo largo de las iteraciones, lo que permite observar cómo el modelo converge
+
+[img]https://github.com/johnconh/Linear-Regresion/blob/main/progresion.png[/img]
